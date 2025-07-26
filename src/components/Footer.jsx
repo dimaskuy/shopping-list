@@ -5,7 +5,10 @@ export default function Footer({ items }) {
     return (
         <footer className="stats">
             Ada {availableItem} barang di daftar, {checkedItem} barang sudah dibeli <span className="progress">({percentageItem}%)</span>
-            <progress value={percentageItem} max="100"></progress>
+            <div className="progress-container">
+                <progress value={percentageItem} max="100"></progress>
+                <p className="progress-counter">{percentageItem}%</p>
+            </div>
         </footer>
     );
 }

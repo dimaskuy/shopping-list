@@ -1,3 +1,5 @@
+import { quotes } from "./App.jsx";
+
 export default function Header() {
     return (
         <header className="title" id="list-menu">
@@ -9,6 +11,7 @@ export default function Header() {
                 </a>
                 !
             </h2>
+            <h3 className="quote-mobile">{quotes}</h3>
         </header>
     );
 }

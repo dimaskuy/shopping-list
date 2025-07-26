@@ -1,6 +1,5 @@
 import { useState } from "react";
-
-const quotes = ["Hai, mau masukkin apa ke list? 😊", "Hari ini belanja apa kita? 😉", "Mau input apa ke list? 😎", "Selamat beraktivitas 😋"][Math.floor(Math.random() * 4)];
+import { quotes } from "./App.jsx";
 
 export default function AddForm({ onNewItem }) {
     const quantityNum = [...Array(20)].map((x, i) => (

@@ -28,7 +28,7 @@ export default function Item({ item, onDeleteItem, onToggleCheck }, onSortedChec
                     jmlh: <span className="qty">{item.quantity}</span>
                 </span>
                 <div className="btn-container">
-                    <label for={checkItemID}>
+                    <label htmlFor={checkItemID}>
                         Selesai
                         <input type="checkbox" id={checkItemID} checked={item.isChecked} onChange={() => onToggleCheck(item.id, isSortedCheck)} />
                     </label>

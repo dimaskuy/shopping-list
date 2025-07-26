@@ -5,6 +5,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+button,
+a,
+input,
+textarea,
+select {
+    outline: none;
+}
 
 body {
     font-size: 1rem;
@@ -69,6 +76,7 @@ html {
 
 .title h2 {
     font-size: 1.1rem;
+    opacity: 0.8;
     font-style: italic;
     text-align: center;
     color: rgb(6, 65, 40);
@@ -84,6 +92,11 @@ html {
 }
 .title h2 a:active {
     zoom: 1.1;
+}
+
+.title .quote-mobile {
+    display: none;
+    visibility: hidden;
 }
 
 .add-form {
@@ -313,7 +326,7 @@ label:active,
 
 .list li label {
     /* margin-top: 1.5rem; */
-    padding: 0.6rem;
+    padding: 0.6rem 0;
 }
 .list li label input {
     margin-left: 1.4rem;
@@ -398,34 +411,261 @@ label:active,
     font-size: 1.5rem;
     font-weight: bold;
 }
+.stats .progress-container {
+    height: 100%;
+}
+.stats .progress-container .progress-counter {
+    display: none;
+    visibility: hidden;
+}
 
 .stats progress {
     margin-top: 1.5rem;
     width: 100%;
     height: 50%;
     padding: 0.4rem;
-    background-color: rgb(6, 47, 30);
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.3), rgba(141, 161, 153, 0.3));
     border-radius: 1.5rem;
     appearance: none;
     -webkit-appearance: none;
 }
 .stats progress::-webkit-progress-bar {
     border-radius: 1.5rem;
-    background-color: rgb(212, 255, 237);
+    background-color: rgb(213, 255, 237);
 }
 .sats progress::-moz-progress-bar {
-    padding: 0.2rem;
     border-radius: 1.5rem;
-    background-color: rgb(224, 255, 242);
+    background-color: rgb(213, 255, 237);
 }
 .stats progress::-webkit-progress-value {
     border-radius: inherit;
-    background: linear-gradient(90deg, rgba(23, 255, 158, 1), rgba(23, 255, 158, 0.9));
+    background: linear-gradient(90deg, rgb(0, 255, 149), rgba(80, 255, 182, 0.9));
     transition: 1s cubic-bezier(0.77, 0, 0.18, 1);
 }
 
+/* phone */
+@media (max-width: 576px) {
+    * {
+        -webkit-tap-highlight-color: transparent;
+    }
+    html {
+        font-size: 40%;
+    }
+    .app {
+        width: 100%;
+        /* padding: 0 2rem; */
+    }
+
+    .to-top {
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        z-index: 999;
+        margin-bottom: 15rem;
+        font-size: 3rem;
+    }
+
+    .title {
+        border-radius: 0 0 20px 20px;
+        padding: 2rem 2rem 2rem 2rem;
+        margin: 0 0 2rem 0;
+    }
+    .title h1 {
+        font-size: 5rem;
+    }
+    .title h2 {
+        font-size: 1.6rem;
+    }
+    .title .quote-mobile {
+        display: block;
+        visibility: visible;
+        text-align: center;
+        font-size: 2.1rem;
+        padding-top: 2rem;
+        font-size: 2rem;
+        color: rgb(6, 65, 40);
+        opacity: 0.9;
+    }
+
+    .add-form {
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0 0 2rem 2rem;
+    }
+
+    .add-form h3 {
+        /* font-size: 2rem;
+        opacity: 0.9;
+        text-align: center; */
+        display: none;
+        visibility: hidden;
+    }
+
+    .add-form .select-container {
+        margin: 1rem 0;
+        gap: 0.8rem;
+    }
+
+    .add-form .add-btn {
+        font-size: 2rem;
+        padding: 1.5rem 2rem;
+    }
+
+    .add-form input,
+    .add-form #qty-list {
+        font-size: 2rem;
+        padding: 1.2rem 2rem;
+        border: 1px solid transparent;
+    }
+
+    .add-form #qty-list {
+        width: 10rem;
+        margin-right: 0;
+    }
+
+    button:active,
+    label:active,
+    #qty-list:active {
+        transform: scale(0.96);
+    }
+
+    .list ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        gap: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 5rem;
+    }
+
+    .list li {
+        font-size: 3rem;
+        width: 22rem;
+        padding: 4rem 2rem;
+        gap: 1.2rem;
+    }
+
+    .list li.overload-text {
+        height: 40rem;
+        padding: 2rem;
+    }
+
+    .list li .item {
+        line-height: 3rem;
+    }
+
+    .list li .see-more {
+        font-size: 2rem;
+    }
+
+    .list li.height-full {
+        height: fit-content;
+    }
+
+    .list li .qty-txt {
+        margin-top: 0.5rem;
+        font-size: 2rem;
+    }
+    .list li .qty {
+        font-size: 2.8rem;
+    }
+
+    .list li .btn-container {
+        padding-top: 2rem;
+        gap: 1.2rem;
+    }
+    .list li.overload-text .btn-container {
+        padding-top: 0rem;
+    }
+
+    .list li label {
+        margin-top: 2rem;
+        padding: 0rem;
+    }
+    .list li label input {
+        margin-left: 1.4rem;
+    }
+
+    .list input[type="checkbox"] {
+        width: 1.8rem;
+        height: 3rem;
+    }
+
+    .list li button,
+    .list li label {
+        font-size: 2rem;
+        padding: 1.2rem 0;
+    }
+
+    .actions {
+        padding: 2rem 0;
+        /* position: sticky; */
+        bottom: 0;
+        border-radius: 2rem 2rem 0 0;
+    }
+
+    .actions button,
+    .actions select {
+        padding: 1rem 2rem;
+        font-size: 1.5rem;
+        margin: 0 1rem;
+    }
+
+    .stats {
+        border-radius: 0;
+        margin-top: 0;
+        padding: 3rem 3rem 4rem 3rem;
+        font-size: 2.3rem;
+        line-height: 1.2;
+        margin-bottom: 100px;
+        height: 15rem;
+    }
+
+    .stats .progress-container {
+        position: fixed;
+        width: 70%;
+        height: unset;
+        bottom: 15px;
+        right: 15%;
+        border-radius: 20px;
+    }
+    .stats .progress-container .progress-counter {
+        display: block;
+        visibility: visible;
+        position: absolute;
+        top: 20px;
+        right: 40%;
+        color: rgb(5, 53, 33);
+        opacity: 0.6;
+        font-weight: 700;
+        letter-spacing: 0.1rem;
+        font-size: 1.8rem;
+    }
+
+    .stats progress {
+        border-radius: 5rem;
+        background: linear-gradient(45deg, rgba(255, 255, 255, 0.3), rgba(141, 161, 153, 0.3));
+        backdrop-filter: blur(10px);
+        box-shadow: 0px 0px 10px 10px rgba(6, 65, 40, 0.1);
+        /* margin-top: 2rem; */
+        height: 4.8rem;
+        padding: 1rem;
+    }
+    .stats progress::-webkit-progress-bar {
+        border-radius: 5rem;
+    }
+    .sats progress::-moz-progress-bar {
+        border-radius: 5rem;
+    }
+    .stats progress::-webkit-progress-value {
+        background: linear-gradient(90deg, rgb(1, 227, 133), rgb(53, 255, 171));
+    }
+}
+
 /* tablet */
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023.98px) {
     html {
         font-size: 40%;
     }
@@ -607,13 +847,6 @@ label:active,
     .stats progress {
         margin-top: 2rem;
         padding: 1rem;
-    }
-}
-
-/* phone */
-@media (max-width: 576px) {
-    html {
-        font-size: 40%;
     }
 }
 
