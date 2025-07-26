@@ -58,6 +58,10 @@ html {
     visibility: hidden;
     transform: scale(0);
 }
+.to-top .icon-up {
+    display: block;
+    width: 40px;
+}
 
 .title {
     background: rgba(23, 255, 158, 0.2);
@@ -185,7 +189,7 @@ label:active,
 } */
 
 .list {
-    background-image: url("..\public\paper-bg.jpg");
+    background-image: url("/public/paper-bg.jpg");
     background-repeat: repeat-y;
     background-size: 100%;
     border-radius: 20px;
@@ -464,6 +468,9 @@ label:active,
         margin-bottom: 15rem;
         font-size: 3.8rem;
     }
+    .to-top .icon-up {
+        width: 35px;
+    }
 
     .title {
         border-radius: 0 0 20px 20px;
@@ -609,7 +616,7 @@ label:active,
     .actions button,
     .actions select {
         padding: 1rem 2rem;
-        font-size: 1.8rem;
+        font-size: 1.9rem;
         margin: 0 1rem;
     }
     .actions select {
@@ -639,7 +646,7 @@ label:active,
         visibility: visible;
         position: absolute;
         top: 22px;
-        right: 40%;
+        right: 105px;
         color: rgb(5, 53, 33);
         opacity: 0.6;
         font-size: 2rem;

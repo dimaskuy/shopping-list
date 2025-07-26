@@ -19,7 +19,9 @@ export default function ToTopBtn() {
 
     return (
         <a href="#list-menu" className="to-top none" ref={btnRef}>
-            <span>⮝</span>
+            <span>
+                <img src="public/circle-up.svg" alt="UP" className="icon-up" />
+            </span>
         </a>
     );
 }
