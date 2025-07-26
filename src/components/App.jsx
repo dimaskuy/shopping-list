@@ -9,7 +9,7 @@ import ListItem from "./ListItem.jsx";
 import Footer from "./Footer.jsx";
 // DATA
 import groceryItems from "../data/groceryItems.js";
-const quotes = ["Hai, mau masukkin apa ke list? 😊", "Hari ini belanja apa kita? 🤔", "Mau input apa ke list? 😎", "Selamat beraktivitas 😋", "Sebenarnya bisa jadi to-do list!"][Math.floor(Math.random() * 5)];
+const quotes = ["Hai, mau masukkin apa ke list? 😊", "Hari ini belanja apa kita? 🤔", "Mau input apa ke list? 😎", "Selamat beraktivitas 😋", "Ini bisa jadi to-do list! ✨"][Math.floor(Math.random() * 5)];
 
 function App() {
     // lifting-state-up!
