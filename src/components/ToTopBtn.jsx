@@ -19,7 +19,7 @@ export default function ToTopBtn() {
 
     return (
         <a href="#list-menu" className="to-top none" ref={btnRef}>
-            <span>&#11165;</span>
+            <span>⮝</span>
         </a>
     );
 }

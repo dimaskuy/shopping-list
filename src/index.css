@@ -457,12 +457,12 @@ label:active,
     }
 
     .to-top {
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
         padding: 0;
         z-index: 999;
         margin-bottom: 15rem;
-        font-size: 3rem;
+        font-size: 3.8rem;
     }
 
     .title {
@@ -609,8 +609,11 @@ label:active,
     .actions button,
     .actions select {
         padding: 1rem 2rem;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         margin: 0 1rem;
+    }
+    .actions select {
+        margin-bottom: 1rem;
     }
 
     .stats {
@@ -620,7 +623,7 @@ label:active,
         font-size: 2.3rem;
         line-height: 1.2;
         margin-bottom: 100px;
-        height: 15rem;
+        height: 18rem;
     }
 
     .stats .progress-container {
@@ -635,13 +638,13 @@ label:active,
         display: block;
         visibility: visible;
         position: absolute;
-        top: 20px;
+        top: 22px;
         right: 40%;
         color: rgb(5, 53, 33);
         opacity: 0.6;
+        font-size: 2rem;
         font-weight: 700;
         letter-spacing: 0.1rem;
-        font-size: 1.8rem;
     }
 
     .stats progress {
@@ -650,7 +653,7 @@ label:active,
         backdrop-filter: blur(10px);
         box-shadow: 0px 0px 10px 10px rgba(6, 65, 40, 0.1);
         /* margin-top: 2rem; */
-        height: 4.8rem;
+        height: 6rem;
         padding: 1rem;
     }
     .stats progress::-webkit-progress-bar {
