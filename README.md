@@ -1,11 +1,10 @@
-# Your shopping list!
+![Made with Vite](https://img.shields.io/badge/Made%20with-Vite-646CFF?logo=vite&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)
 
-<h2>Add your items into this short-simple memo here!</h2>
+# 🛒 Your shopping list!
 
-[![Vite Logo](/public/vite.svg)](https://vite.dev/)
-[![React Logo](/public/react.svg)](https://react.dev/)
+**Add your items into this short-simple memo here!**
 
-<h3>Built with Vite + ReactJS.</h3>
 Basically you can:
 
 -   ✏️ Add your items
@@ -13,3 +12,12 @@ Basically you can:
 -   ❎ Remove it
 -   🏳️ Track your progress
 -   ⚙️ Also sort it by: newest, name, and check
+
+## ⚛️ My first react app!
+
+[![Vite Logo](/public/vite.svg)](https://vite.dev/)
+[![React Logo](/public/react.svg)](https://react.dev/)
+
+_Aside from that, it's built with pure vanilla HTML and CSS.\*_
+
+---
