@@ -1,7 +1,10 @@
-![Made with Vite](https://img.shields.io/badge/Made%20with-Vite-646CFF?logo=vite&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)
+[![Made with Vite](https://img.shields.io/badge/Made%20with-Vite-646CFF?logo=vite&logoColor=white)](https://github.com/topics/vite)
+[![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)](https://github.com/topics/react)
+[![PWA](https://img.shields.io/badge/PWA-Supported-5cb85c?logo=pwa&logoColor=white)](https://github.com/topics/pwa)
 
 # 🛒 Your shopping list!
+
+<img src="public/screenshots/preview.png" alt="Banner" width="80%">
 
 **Add your items into this short-simple memo here!**
 
