@@ -1,4 +1,28 @@
-@import url("https://fonts.googleapis.com/css2?family=Borel&family=Comfortaa:wght@300;400;700&display=swap");
+@font-face {
+    font-family: "Comfortaa";
+    src: url("/fonts/comfortaa/Comfortaa-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Comfortaa";
+    src: url("/fonts/comfortaa/Comfortaa-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Comfortaa";
+    src: url("/fonts/comfortaa/Comfortaa-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Jersey 20";
+    src: url("/fonts/jersey/Jersey20-Regular.ttf") format("truetype");
+    font-weight: bolder;
+    font-style: normal;
+}
 
 * {
     margin: 0;
@@ -17,6 +41,7 @@ body {
     font-size: 1rem;
     font-family: "Comfortaa", "Poppins", sans-serif;
     background-color: rgba(23, 255, 158, 0.15);
+    overflow-x: hidden;
 }
 
 html {
@@ -189,7 +214,7 @@ label:active,
 } */
 
 .list {
-    background-image: url("/public/paper-bg.jpg");
+    background-image: url("/paper-bg.jpg");
     background-repeat: repeat-y;
     background-size: 100%;
     border-radius: 20px;
@@ -646,7 +671,7 @@ label:active,
         visibility: visible;
         position: absolute;
         top: 22px;
-        right: 105px;
+        right: 115px;
         color: rgb(5, 53, 33);
         opacity: 0.6;
         font-size: 2rem;
