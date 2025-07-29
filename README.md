@@ -6,6 +6,8 @@
 
 <img src="public/screenshots/preview.png" alt="Banner" width="80%">
 
+> **🎉 Now in PWA support!**
+
 **Add your items into this short-simple memo here!**
 
 Basically you can:
