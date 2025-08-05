@@ -44,10 +44,6 @@ body {
     overflow-x: hidden;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 .app {
     width: 70%;
     height: 100vh;
