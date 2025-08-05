@@ -896,9 +896,3 @@ label:active,
         transform: scale(1);
     }
 }
-
-@media (prefers-reduced-motion: reduce) {
-    html {
-        scroll-behavior: smooth;
-    }
-}
